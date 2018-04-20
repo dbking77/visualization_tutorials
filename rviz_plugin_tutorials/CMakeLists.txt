@@ -20,6 +20,7 @@ add_definitions(-DQT_NO_KEYWORDS)
 ## Here we specify which header files need to be run through "moc",
 ## Qt's meta-object compiler.
 qt4_wrap_cpp(MOC_FILES
+  src/distmap_display.h
   src/drive_widget.h
   src/imu_display.h
   src/plant_flag_tool.h
@@ -29,6 +30,7 @@ qt4_wrap_cpp(MOC_FILES
 ## Here we specify the list of source files, including the output of
 ## the previous command which is stored in ``${MOC_FILES}``.
 set(SOURCE_FILES
+  src/distmap_display.cpp
   src/drive_widget.cpp
   src/imu_display.cpp
   src/imu_visual.cpp
